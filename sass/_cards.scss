@@ -1,0 +1,109 @@
+//main header cards
+.main_card{
+    border-radius: 1.25rem;
+    max-width: 16.8rem;
+    height: 27rem;
+    transition: transform 0.5s;
+    &:hover{
+        transform: scale(1.1);
+    }
+}
+
+.text-utilize{
+    max-width: 10.25rem;
+    @media (max-width:768px) {
+        max-width: 9.375rem;
+    }
+}
+
+.text-utilize-xl{
+    max-width: 13rem;
+    @media (max-width:768px) {
+        max-width: 11.75rem;
+    }
+}
+
+.card-icon{
+    width: 6.1rem;
+    height: 6.1rem;
+    margin-bottom: 1.8rem;
+    margin-top: 1rem;
+}
+//testimonial cards 
+
+.testimonial-card{
+    position: relative;
+    z-index: 40;
+    margin: 0 2.5rem ;
+    padding: 1.5rem 1.4rem 1.5rem 1.5rem;
+    border-radius: 1.3rem;
+    max-width: 895px;
+    background-color: white;
+    color: $danger;
+    transition: transform 0.5s;
+    &:hover{
+        transform: scale(1.1);
+    }
+    @media (min-width: 576px) {
+        margin: 0;
+        padding: 2.75rem 3.43rem;
+    }
+}
+
+.testimonial-icon{
+    position: absolute;
+    top: -2.5rem;
+    width: 77px;
+    height: 88px;
+    
+}
+
+.testimonial-icon-left{
+    @extend .testimonial-icon;
+    left: -1.7rem ;
+}
+
+.testimonial-icon-right{
+    @extend .testimonial-icon;
+    right: -1.7rem;
+}
+
+.testimonial-text{
+    font-size: 1.4rem;
+    line-height: 1.9rem;
+    font-weight: bold;
+    @media (min-width: 768px) {
+        font-size: 1.65rem;
+    }
+}
+
+.testimonial-position{
+    margin-top: 80px;
+}
+
+.testimonial-bg{
+    background-image: url(../images/testimonial-bg.svg);
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    @media (max-width:768px) {
+        display: none;
+        
+    }   
+}
+
+.reverse-card{
+    background-color: $danger;
+    color: white;
+
+}
+
+.ico{
+    width: 70px;
+    height: 70px;
+}
+
+.forward{
+    z-index: 40;
+}

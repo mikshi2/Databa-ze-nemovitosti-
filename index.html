@@ -1,0 +1,900 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-W5RLMMEERE"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-W5RLMMEERE");
+    </script>
+    <!--Basic metatags-->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--OG metatags-->
+    <meta property="og:title" content="Databáze nemovitostí" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.databazenemovitosti.cz" />
+    <meta
+      property="og:description"
+      content="Zjednodušujeme hledání nemovitostí. Napište nám jakou nemovistost sháníte a my Vám jí najdeme!"
+    />
+    <meta property="og:image" content="" />
+    <!--Title and description-->
+    <title>Databáze nemovitostí</title>
+    <meta
+      name="description"
+      content="Zjednodušujeme hledání nemovitostí. Napište nám jakou nemovistost sháníte a my Vám jí najdeme!"
+    />
+    <link rel="shortcut icon" href="images/favicon.svg" type="image/ico" />
+
+    <!--Meta keywords-->
+    <meta
+      name="keywords"
+      content="nemovitosti, reality, dům, byt, pozemek, koupím nemovitost, databáze nemovitostí"
+    />
+
+    <!--Stylesheets-->
+    <link rel="stylesheet" href="css/main.min.css" />
+    <link rel="stylesheet" href="css/virtual-select.min.css" />
+  </head>
+  <body class="background">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md navbar-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img
+            src="images/favicon.svg"
+            alt="logo"
+            width="30"
+            height="24"
+            class="d-inline-block align-text-top"
+          />
+          databazenemovitosti.cz
+        </a>
+
+        <button
+          class="navbar-toggler collapsed d-flex d-md-none flex-column justify-content-around"
+          id="navToggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="toggler-icon top-bar"></span>
+          <span class="toggler-icon middle-bar"></span>
+          <span class="toggler-icon bottom-bar"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav text-info ms-auto text-center fw-bold">
+            <li class="nav-item">
+              <a
+                title="domovská stránka"
+                class="nav-link text-info active"
+                aria-current="page"
+                href="index.html"
+                >Úvod</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a
+                title="O projektu"
+                class="nav-link text-info px-3"
+                href="o_projektu.html"
+                >O projektu</a
+              >
+            </li>
+            <li class="nav-item">
+              <a title="O nás" class="nav-link text-info px-3" href="o_nas.html"
+                >O nás</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header -->
+    <header>
+      <h1
+        class="text-uppercase fw-bold text-secondary header-shadow main-heading"
+      >
+        Hledáte nemovitost?
+      </h1>
+      <h2 class="text-uppercase text-info fw-bold mt-4 header-shadow">
+        byt, dům nebo pozemek?
+      </h2>
+      <p class="fw-bold text-secondary mt-3 mb-0 header-info header-shadow">
+        S naším jednoduchým formulářem nemusíte procházet stovky inzerátů.
+      </p>
+      <p class="fw-bold text-secondary mt-0 header-info header-shadow">
+        Napište nám, jakou nemovitost sháníte a my Vám ji najdeme.
+      </p>
+
+      <div class="d-flex justify-content-center justify-content-md-start">
+        <button class="btn btn-danger rounded-pill shadow mt-2">
+          <a
+            title="O projektu"
+            class="text-white text-uppercase fw-bold text-decoration-none"
+            href="o_projektu.html"
+            >Jak to funguje?</a
+          >
+        </button>
+      </div>
+    </header>
+
+    <!-- Cards -->
+    <article class="mt-5 mb-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6 col-lg-3 mt-5">
+            <div class="main_card shadow mx-auto">
+              <span class="d-flex justify-content-center"
+                ><img
+                  class="card-icon"
+                  src="images/checkbox.svg"
+                  alt="Nemovitosti prověřujeme"
+              /></span>
+              <h3
+                class="text-danger text-utilize text-center fw-bold text-uppercase mx-auto"
+              >
+                Prověřené nemovitosti
+              </h3>
+              <p class="text-info text-center fw-bolder px-2 py-4">
+                Nebudete kupovat zajíce v pytli... Každou nemovitost prověřujeme
+                a veškeré dokumenty budete mít k dispozici. Spokojený klient je
+                u nás vždy na prvním místě.
+              </p>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-3 mt-5">
+            <div class="main_card mx-auto shadow">
+              <span class="d-flex justify-content-center"
+                ><img
+                  class="card-icon"
+                  src="images/location.svg"
+                  alt="Vše je na jednom místě"
+              /></span>
+              <h3
+                class="text-danger text-utilize-xl text-center fw-bold text-uppercase mx-auto"
+              >
+                Všechno na jednom místě
+              </h3>
+              <p class="text-info text-center fw-bolder py-4 px-2">
+                Máme pod křídly velké množství nemovitostí... Pravděpodobnost,
+                že i Vy zde najdete tu svou, je tak značně vysoká.
+              </p>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-3 mt-5">
+            <div class="main_card mx-auto shadow">
+              <span class="d-flex justify-content-center"
+                ><img
+                  class="card-icon"
+                  src="images/investment.svg"
+                  alt="Máme minimální náklady"
+              /></span>
+              <h3
+                class="text-danger text-utilize text-center fw-bold text-uppercase mx-auto"
+              >
+                Minimum nákladů
+              </h3>
+              <p class="text-info text-center fw-bolder py-4 px-2">
+                Nemáme náklady na inzerci, ani podobné výdaje... Nebudete tak
+                platit částky v řádech stovek tisíc na provizích, jako je to u
+                prodeji přes realitní kanceláře.
+              </p>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-3 mt-5">
+            <div class="main_card mx-auto shadow">
+              <span class="d-flex justify-content-center"
+                ><img
+                  class="card-icon"
+                  src="images/services.svg"
+                  alt="Zajistíme komplexní realitní servis"
+              /></span>
+              <h3
+                class="text-danger text-utilize text-center fw-bold text-uppercase mx-auto"
+              >
+                Komplexní servis
+              </h3>
+              <p class="text-info text-center fw-bolder py-4 px-2">
+                Celý proces můžete nechat na nás... Najdeme vhodnou nemovitost,
+                domluvíme prohlídku, zařídíme právní služby, financování a
+                necháme zapsat nemovitost na katastru.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+    <!-- Form -->
+    <form
+      action="https://getform.io/f/9116b1bb-5116-4b38-b318-53767d98e8c0"
+      class="needs-validation mb-5"
+      method="post"
+      novalidate
+    >
+      <h4 class="text-uppercase text-white text-center pt-4 mb-4 header-shadow">
+        dejte nám vědět
+      </h4>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <label for="name" class="form-label text-white">Jméno&ast;</label>
+            <input
+              type="text"
+              class="form-control rounded-pill shadow"
+              id="name"
+              placeholder="jméno"
+              name="Jméno"
+              required
+              minlength="2"
+              maxlength="20"
+              pattern="^[a-zA-ZàáâäãåąčćęèěéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčřšžÀÁÂÄÃÅĄĆČŘĖĘÈÉĚÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]+$"
+            />
+            <div class="invalid-feedback">Doplňte prosím jméno!</div>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="prijmeni" class="form-label text-white"
+              >Příjmení&ast;</label
+            >
+            <input
+              type="text"
+              class="form-control rounded-pill shadow"
+              id="prijmeni"
+              placeholder="příjmení"
+              name="Příjmení"
+              required
+              minlength="2"
+              maxlength="20"
+              pattern="^[a-zA-ZàáâäãåąčćęèěéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčřšžÀÁÂÄÃÅĄĆČŘĖĘÈÉĚÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]+$"
+            />
+            <div class="invalid-feedback">Doplňte prosím příjmení!</div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <label for="email" class="form-label text-white">Email&ast;</label>
+            <input
+              type="email"
+              class="form-control rounded-pill shadow"
+              id="email"
+              placeholder="email@email.cz"
+              name="Email"
+              required
+              maxlength="30"
+            />
+            <div class="invalid-feedback">Doplňte prosím platný email!</div>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="telephone" class="form-label text-white"
+              >Telefon&ast;</label
+            >
+            <input
+              type="text"
+              inputmode="tel"
+              class="form-control rounded-pill shadow"
+              id="telephone"
+              placeholder="123 456 789"
+              name="Telefon"
+              minlength="9"
+              maxlength="16"
+              pattern="^\+?\d{1,4}?[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}$"
+              required
+            />
+            <div class="invalid-feedback">
+              Doplňte prosím telefonní kontakt!
+            </div>
+          </div>
+        </div>
+        <div class="row mb-3">
+          <label
+            for="typNemovitosti"
+            class="form-label text-white header-shadow"
+            >Typ nemovitosti&ast;</label
+          >
+          <div class="container row ps-4 pe-0">
+            <input
+              type="radio"
+              class="btn-check"
+              name="typNemovitosti"
+              id="byt"
+              value="Byt"
+              autocomplete="off"
+              required
+            />
+            <label
+              class="btn btn-outline-danger text-white border-4 border-white rounded-end rounded-pill col-4"
+              for="byt"
+              >Byt</label
+            >
+            <input
+              type="radio"
+              class="btn-check"
+              name="typNemovitosti"
+              id="dum"
+              value="Dům"
+              autocomplete="off"
+              required
+            />
+            <label
+              class="btn btn-outline-danger text-white border-4 border-white rounded-0 col-4"
+              for="dum"
+              >Rodinný dům</label
+            >
+            <input
+              type="radio"
+              class="btn-check"
+              name="typNemovitosti"
+              id="pozemek"
+              value="Pozemek"
+              autocomplete="off"
+              required
+            />
+            <label
+              class="btn btn-outline-danger text-white border-4 border-white rounded-start rounded-pill col-4"
+              for="pozemek"
+              >Pozemek</label
+            >
+            <div class="invalid-feedback">Vyberte prosím typ nemovitosti!</div>
+          </div>
+        </div>
+        <div class="row">
+          <label for="location" class="form-label text-white"
+            >Lokalita&ast;</label
+          >
+          <div class="col-md-6 mb-3">
+            <select
+              class="shadow"
+              id="location"
+              multiple
+              required
+              name="Lakolita kraj"
+              placeholder="vyberte kraj/e"
+              data-search="false"
+            >
+              <option value="Praha">Praha</option>
+              <option value="Středočeský">Středočeský</option>
+              <option value="Jihočeský">Jihočeský</option>
+              <option value="Plzeňský">Plzeňský</option>
+              <option value="Karlovarský">Karlovarský</option>
+              <option value="Ústecký">Ústecký</option>
+              <option value="Liberecký">Liberecký</option>
+              <option value="Královehradecký">Královéhradecký</option>
+              <option value="Pardubický">Pardubický</option>
+              <option value="Vysočina">Vysočina</option>
+              <option value="Jihomoravský">Jihomoravský</option>
+              <option value="Olomoucký">Olomoucký</option>
+              <option value="Moravskoslezký">Moravskoslezký</option>
+              <option value="Zlínský">Zlínský</option>
+            </select>
+            <div class="invalid-feedback">
+              Vyberte prosím kraj, kde máme hledat!
+            </div>
+          </div>
+          <div class="col-md-6 mb-3">
+            <select
+              class="shadow"
+              id="okresy"
+              multiple
+              required
+              name="Lokalita okres"
+              placeholder="vyberte okres/y"
+              data-search="true"
+            >
+              <optgroup label="Hl.m.Praha">
+                <option value="Praha 1">Praha 1</option>
+                <option value="Praha 2">Praha 2</option>
+                <option value="Praha 3">Praha 3</option>
+                <option value="Praha 4">Praha 4</option>
+                <option value="Praha 5">Praha 5</option>
+                <option value="Praha 6">Praha 6</option>
+                <option value="Praha 7">Praha 7</option>
+                <option value="Praha 8">Praha 8</option>
+                <option value="Praha 9">Praha 9</option>
+                <option value="Praha 10">Praha 10</option>
+              </optgroup>
+              <optgroup label="Středočeský kraj">
+                <option value="Benešov">Benešov</option>
+                <option value="Beroun">Beroun</option>
+                <option value="Kladno">Kladno</option>
+                <option value="Kolín">Kolín</option>
+                <option value="Kutná Hora">Kutná Hora</option>
+                <option value="Mělník">Mělník</option>
+                <option value="Mladá Boleslav">Mladá Boleslav</option>
+                <option value="Nymburk">Nymburk</option>
+                <option value="Praha-východ">Praha-východ</option>
+                <option value="Praha-západ">Praha-západ</option>
+                <option value="Příbram">Příbram</option>
+                <option value="Rakovník">Rakovník</option>
+              </optgroup>
+              <optgroup label="Jihočeský kraj">
+                <option value="České Budějovice">České Budějovice</option>
+                <option value="Český Krumlov">Český Krumlov</option>
+                <option value="Jindřichův Hradec">Jindřichův Hradec</option>
+                <option value="Písek">Písek</option>
+                <option value="Prachatice">Prachatice</option>
+                <option value="Strakonice">Strakonice</option>
+                <option value="Tábor">Tábor</option>
+              </optgroup>
+              <optgroup label="Plzeňský kraj">
+                <option value="Domažlice">Domažlice</option>
+                <option value="Klatovy">Klatovy</option>
+                <option value="Plzeň-jih">Plzeň-jih</option>
+                <option value="Plzeň-město">Plzeň-město</option>
+                <option value="Plzeň-sever">Plzeň-sever</option>
+                <option value="Rokycany">Rokycany</option>
+                <option value="Tachov">Tachov</option>
+              </optgroup>
+              <optgroup label="Karlovarský kraj">
+                <option value="Cheb">Cheb</option>
+                <option value="Karlovy Vary">Karlovy Vary</option>
+                <option value="Sokolov">Sokolov</option>
+              </optgroup>
+              <optgroup label="Ústecký kraj">
+                <option value="Děčín">Děčín</option>
+                <option value="Chomutov">Chomutov</option>
+                <option value="Litoměřice">Litoměřice</option>
+                <option value="Louny">Louny</option>
+                <option value="Most">Most</option>
+                <option value="Teplice">Teplice</option>
+                <option value="Ústí nad Labem">Ústí nad Labem</option>
+              </optgroup>
+              <optgroup label="Liberecký kraj">
+                <option value="České Lípa">Česká Lípa</option>
+                <option value="Jablonec nad Nisou">Jablonec nad Nisou</option>
+                <option value="Liberec">Liberec</option>
+                <option value="Semily">Semily</option>
+              </optgroup>
+              <optgroup label="Královéhradecký kraj">
+                <option value="Hradec Králové">Hradec Králové</option>
+                <option value="Jičín">Jičín</option>
+                <option value="Náchod">Náchod</option>
+                <option value="Rychnov nad Kněžnou">Rychnov nad Kněžnou</option>
+                <option value="Trutnov">Trutnov</option>
+              </optgroup>
+              <optgroup label="Pardubický kraj">
+                <option value="Chrudim">Chrudim</option>
+                <option value="Pardubice">Pardubice</option>
+                <option value="Svitavy">Svitavy</option>
+                <option value="Ústí nad Orlicí">Ústí nad Orlicí</option>
+              </optgroup>
+              <optgroup label="Kraj Vysočina">
+                <option value="Havlíčkův Brod">Havlíčkův Brod</option>
+                <option value="Jihlava">Jihlava</option>
+                <option value="Pelhřimov">Pelhřimov</option>
+                <option value="Třebíč">Třebíč</option>
+                <option value="Ždár nad Sázavou">Ždár nad Sázavou</option>
+              </optgroup>
+              <optgroup label="Jihomoravský kraj">
+                <option value="Blansko">Blansko</option>
+                <option value="Brno-město">Brno-město</option>
+                <option value="Brno-venkov">Brno-venkov</option>
+                <option value="Břeclav">Břeclav</option>
+                <option value="Hodonín">Hodonín</option>
+                <option value="Vyškov">Vyškov</option>
+                <option value="Znojmo">Znojmo</option>
+              </optgroup>
+              <optgroup label="Olomoucký kraj">
+                <option value="Jeseník">Jeseník</option>
+                <option value="Olomouc">Olomouc</option>
+                <option value="Prostějov">Prostějov</option>
+                <option value="Přerov">Přerov</option>
+                <option value="Šumperk">Šumperk</option>
+              </optgroup>
+              <optgroup label="Moravskozlezký kraj">
+                <option value="Bruntál">Bruntál</option>
+                <option value="Frýdek-Místek">Frýdek-Místek</option>
+                <option value="Karviná">Karviná</option>
+                <option value="Nový Jičín">Nový Jičín</option>
+                <option value="Opava">Opava</option>
+                <option value="Ostrava-město">Ostrava-město</option>
+              </optgroup>
+              <optgroup label="Zlínský kraj">
+                <option value="Kroměříž">Kroměříž</option>
+                <option value="Uherské Hradiště">Uherské Hradiště</option>
+                <option value="Vsetín">Vsetín</option>
+                <option value="Zlín">Zlín</option>
+              </optgroup>
+            </select>
+            <div class="invalid-feedback">Specifikujte nám prosím okres!</div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <label for="dispozice" class="form-label text-white"
+              >Dispozice</label
+            >
+            <select
+              class="shadow"
+              id="dispozice"
+              multiple
+              name="Dispozice"
+              placeholder="vyberte dispozici/e bytu..."
+              data-search="false"
+            >
+              <option value="1+kk">1+kk</option>
+              <option value="1+1">1+1</option>
+              <option value="2+kk">2+kk</option>
+              <option value="2+1">2+1</option>
+              <option value="3+kk">3+kk</option>
+              <option value="3+1">3+1</option>
+              <option value="4+kk">4+kk</option>
+              <option value="4+1">4+1</option>
+              <option value="5+kk">5+kk</option>
+              <option value="5+1">5+1</option>
+              <option value="jiné">jiné</option>
+            </select>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="rozloha" class="form-label text-white"
+              >Rozloha pozemku (v m²)</label
+            >
+            <div class="row">
+              <div class="col-6">
+                <input
+                  type="text"
+                  class="form-control rounded-pill shadow"
+                  name="Rozloha min"
+                  id="minRozloha"
+                  maxlength="6"
+                  pattern="^[0-9 ]{2,6}$"
+                  placeholder="minimální"
+                />
+                <div class="invalid-feedback">
+                  Zvolte prosím minimální rozlohu! (pouze čísla)
+                </div>
+              </div>
+              <div class="col-6">
+                <input
+                  type="text"
+                  class="form-control rounded-pill shadow"
+                  name="Rozloha max"
+                  id="maxRozloha"
+                  maxlength="6"
+                  pattern="^[0-9 ]{2,6}$"
+                  placeholder="maximální"
+                />
+                <div class="invalid-feedback">
+                  Zvolte prosím maximální rozlohu! (pouze čísla)
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <label for="price" class="form-label text-white">Cena&ast;</label>
+            <div class="row">
+              <div class="col-6">
+                <input
+                  type="text"
+                  class="form-control rounded-pill shadow"
+                  name="Cena min"
+                  id="minPrice"
+                  placeholder="minimální (v Kč)"
+                  minlength="3"
+                  maxlength="12"
+                  pattern="^[0-9 ]{3,12}$"
+                  required
+                />
+                <div class="invalid-feedback">
+                  Zvolte prosím minimální cenu!
+                </div>
+              </div>
+              <div class="col-6">
+                <input
+                  type="text"
+                  class="form-control rounded-pill shadow"
+                  name="Cena max"
+                  id="maxPrice"
+                  placeholder="maximální (v Kč)"
+                  maxlength="12"
+                  pattern="^[0-9 ]{4,12}$"
+                  required
+                />
+                <div class="invalid-feedback">
+                  Zvolte prosím maximální cenu!
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mb-1">
+          <label for="poznamky" class="form-label text-white"
+            >Prostor pro Vaše poznámky:</label
+          >
+          <textarea
+            class="form-control shadow"
+            id="poznamky"
+            name="Poznámky"
+            rows="6"
+            maxlength="500"
+            placeholder="Další pro Vás zásadní kritéria... "
+          ></textarea>
+        </div>
+        <p class="text-white fs-6">&ast;povinný údaj</p>
+        <div class="col-12 mb-3">
+          <div class="form-check">
+            <input
+              class="form-check-input custom-checkbox shadow"
+              type="checkbox"
+              value=""
+              id="souhlas"
+              required
+            />
+            <label class="form-check-label text-white" for="souhlas">
+              Souhlasím se
+              <a class="text-decoration-none text-danger popup-start" href="#"
+                >zpracováním osobních údajů</a
+              >&ast;
+            </label>
+            <div class="invalid-feedback">
+              Vyplňte prosím souhlas se zpracováním osobních údajů!
+            </div>
+            <div class="popup-wrapper">
+              <div class="popup">
+                <p class="popup-content">
+                  Zpracování os údajů. Prodáme všechny vaše data, tomu kdo dá
+                  nejvíc peněz...
+                </p>
+                <button class="btn btn-danger popup-close"></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="d-grid">
+          <input
+            type="hidden"
+            id="captchaResponse"
+            name="g-recaptcha-response"
+          />
+          <button
+            class="fw-bold btn btn-danger btn-lg text-uppercase mx-auto rounded-pill mb-3 shadow-lg"
+          >
+            Odeslat
+          </button>
+        </div>
+      </div>
+    </form>
+    <!-- Basic info + Contact -->
+    <article class="pt-2 mb-3">
+      <div class="container position-relative">
+        <h2
+          class="text-info text-uppercase fw-bold header-shadow text-center forward"
+        >
+          Proč hledat Nemovitosti přes nás?
+        </h2>
+        <div class="d-flex justify-content-end testimonial-position">
+          <div class="testimonial-card reverse-card shadow">
+            <img
+              class="testimonial-icon-left"
+              src="images/reverseFirst.svg"
+              alt="první důvod"
+            />
+            <p class="testimonial-text">
+              Spokojený klient je u nás na prvním místě - nabízíme perfektní
+              servis, lidský přístup a transparentní jednání.
+            </p>
+          </div>
+        </div>
+        <div class="d-flex justify-content-start testimonial-position">
+          <div class="testimonial-card shadow">
+            <img
+              class="testimonial-icon-right"
+              src="images/secondicon.svg"
+              alt="druhý důvod"
+            />
+            <p class="testimonial-text">
+              Díky propracovanému systému máme při zprostředkování prodeje
+              minimální náklady, a proto u nás nebudete přeplácet statisíce na
+              provizích realitním kancelářím nad reálnou kupní cenu.
+            </p>
+          </div>
+        </div>
+        <div class="d-flex justify-content-end testimonial-position">
+          <div class="testimonial-card reverse-card shadow">
+            <img
+              class="testimonial-icon-left"
+              src="images/reverseThird.svg"
+              alt="třetí důvod"
+            />
+            <p class="testimonial-text">
+              Dokážeme pokrýt obchod z hlediska právní stránky - zařídíme vše od
+              rezervační smlouvy, přes smlouvu kupní až po úspěšný přepis
+              nemovitosti na katastru.
+            </p>
+          </div>
+        </div>
+        <div class="d-flex justify-content-start testimonial-position">
+          <div class="testimonial-card shadow">
+            <img
+              class="testimonial-icon-right"
+              src="images/fourthicon.svg"
+              alt="čtvrtý důvod"
+            />
+            <p class="testimonial-text">
+              Díky dlouhodobé spolupráci s finančním sektorem Vám můžeme zařídit
+              i nezávazné srovnání financování od všech bank a následně bude jen
+              na Vás, zda si nějakou z nabídek vyberete nebo se zda-li si úvěr
+              zařídíte vlastní cestou.
+            </p>
+          </div>
+        </div>
+        <div class="row justify-content-end">
+          <h2
+            class="col-12 col-lg-7 text-secondary fw-bold text-uppercase fs-1 text-center contact-position"
+          >
+            Kontaktní údaje
+          </h2>
+        </div>
+        <div class="d-flex justify-content-end mb-5">
+          <div class="shadow contact-container">
+            <div class="row p-2 p-sm-3 ms-3">
+              <img
+                class="contact-icon col-2"
+                src="images/email.svg"
+                alt="email"
+              />
+              <p
+                class="col d-flex align-items-center fw-bold text-secondary ps-md-5 ps-2 pe-4 contact-text mb-0"
+              >
+                databazenemovitosti@gmail.com
+              </p>
+            </div>
+            <div class="row p-2 p-sm-3 ms-3">
+              <img
+                class="contact-icon col-2"
+                src="images/tel.svg"
+                alt="telefonní kontakt"
+              />
+              <p
+                class="col d-flex align-items-center fw-bold text-secondary ps-md-5 ps-2 contact-text mb-0"
+              >
+                +420 123 456 789
+              </p>
+            </div>
+            <div class="row p-2 p-sm-3 ms-3">
+              <img
+                class="contact-icon col-2"
+                src="images/instagram_1.svg"
+                alt="instagram ikona"
+              />
+              <p
+                class="col d-flex align-items-center fw-bold text-secondary ps-md-5 ps-2 contact-text mb-0"
+              >
+                @databazenemovitosti
+              </p>
+            </div>
+            <div class="row p-2 p-sm-3 ms-3">
+              <img
+                class="contact-icon col-2"
+                src="images/facebook_1.svg"
+                alt="facebook ikona"
+              />
+              <p
+                class="col d-flex align-items-center fw-bold text-secondary ps-md-5 ps-2 contact-text mb-0"
+              >
+                @databazenemovitosti
+              </p>
+            </div>
+            <div class="row p-2 p-sm-3 ms-3">
+              <img
+                class="contact-icon col-2"
+                src="images/messenger_1.svg"
+                alt="messenger ikona"
+              />
+              <p
+                class="col d-flex align-items-center fw-bold text-secondary ps-md-5 ps-2 contact-text mb-0"
+              >
+                @databazenemovitosti
+              </p>
+            </div>
+          </div>
+        </div>
+        <img
+          class="contact-image"
+          src="images/cardBG.svg"
+          alt="dům s kouřem z komína"
+        />
+      </div>
+    </article>
+    <!-- Footer -->
+    <footer>
+      <div class="container-fluid bg-info pt-3">
+        <div class="container">
+          <div class="row">
+            <div
+              class="col-sm-12 col-lg-3 d-flex align-items-center justify-content-center mb-3 mb-lg-0"
+            >
+              <img
+                class="footer-logo"
+                src="images/footerLogo.svg"
+                alt="logo databazenemovitosti"
+              />
+              <p class="text-white fw-bold mb-0 ms-2">databazenemovitosti.cz</p>
+            </div>
+            <div class="col-sm-4 col-lg-3 justify-content-start">
+              <h4 class="text-uppercase text-white fw-bold">Podmínky</h4>
+              <p class="text-white mb-2">Ochrana osobních údajů</p>
+              <p class="text-white">Podmínky</p>
+            </div>
+            <div class="col-sm-4 col-lg-3">
+              <h4 class="text-white text-uppercase fw-bold">Menu</h4>
+              <ul class="list-unstyled">
+                <li>
+                  <a
+                    title="Domovská stránka"
+                    class="text-white text-decoration-none"
+                    href="index.html"
+                    >Úvod</a
+                  >
+                </li>
+                <li>
+                  <a
+                    title="O projektu"
+                    class="text-white text-decoration-none"
+                    href="o_projektu.html"
+                    >O projektu</a
+                  >
+                </li>
+                <li>
+                  <a
+                    title="O nás"
+                    class="text-white text-decoration-none"
+                    href="o_nas.html"
+                    >O nás</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="col-sm-4 col-lg-3">
+              <h4 class="text-white text-uppercase fw-bold">Kontakt</h4>
+              <p class="text-white mb-2">+420 123 456 789</p>
+              <p class="text-white">databazenemovitosti@gmail.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid bg-dark">
+        <div class="row justify-content-evenly py-3">
+          <p class="text-white text-center mb-0 col-12 col-md-4">
+            databazenemovitosti.cz 2022&copy;
+          </p>
+          <p class="text-white text-center mb-0 col-12 col-md-4">
+            Všechna práva vyhrazena.
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- JS scripts -->
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="js/virtual-select.min.js"></script>
+    <script src="js/locationMultipleCheck.js"></script>
+    <script src="js/formValidation.js"></script>
+    <script src="js/popup.js"></script>
+    <script
+      src="https://www.google.com/recaptcha/api.js?render=reCAPTCHA_site_key"
+    >
+      grecaptcha.ready(function() {
+        grecaptcha.execute('6LeOl9MhAAAAABqMtXMubcBfcLfor9PaBDhJ5iQW', {action: 'homepage'})
+        .then(function(token) {
+          document.getElementById('captchaResponse').value = token;
+        });
+      });
+    </script>
+  </body>
+</html>

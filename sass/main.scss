@@ -1,0 +1,42 @@
+// functions
+@import "../node_modules/bootstrap/scss/functions";
+
+// theme colors
+$secondary: #546E7A;
+$info: #183334;
+$success: #7CA892;
+$danger: #9B3A3E;
+$warning: #A8DFEB;
+
+// cards
+$card-border-width: 0;
+
+// rules
+$enable-negative-margins: true;
+// text-rules
+
+// form
+$input-border-color: white;
+$input-btn-focus-color: $secondary;
+$input-focus-border-color:none;
+$box-shadow-inset: inset 20px 20px 2px rgba(black, .075);
+
+  
+  
+// BS variables and mixins
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+  
+// all bootstrap
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+  
+// custom styles
+  
+@import "navbar";
+@import "header";
+@import "cards";
+@import "form";
+@import "footer";
+@import "contact";
+@import "project";
+@import "popup";

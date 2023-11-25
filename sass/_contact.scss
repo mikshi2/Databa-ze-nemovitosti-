@@ -1,0 +1,52 @@
+.contact-container{
+    border-radius: 1.5rem;
+}
+
+.contact-icon{
+    width: 2rem;
+    height: 2rem;
+    padding: 0;
+    @media (min-width:576px) {
+        width: 3rem;
+    height: 3rem;
+    }
+    @media (min-width:768px) {
+        width: 4.5rem;
+        height: 4.5rem;
+    }
+
+}
+
+.contact-position {
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+}
+
+.contact-text{
+    font-size: 1rem;
+    @media (min-width:576px) {
+        font-size: 1.25rem;
+    }
+    @media (min-width:768px) {
+        font-size: 1.75rem;
+    }
+}
+.contact-image{
+    display: none;
+    z-index: 1;
+    position: absolute;
+    bottom: -60px;
+    left: 1px;
+    height: 100%;
+    @media (min-width:992px) {
+        display: block;
+    }
+}
+
+.contact-bg{
+    background: rgb(124,168,146);
+    background: linear-gradient(137deg, rgba(124,168,146,1) 0%, rgba(168,223,235,1) 100%);
+    @media (min-width:992px) {
+        border-radius: 50% 50% 0 0 ;
+    }
+}

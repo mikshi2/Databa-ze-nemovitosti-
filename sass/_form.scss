@@ -1,0 +1,18 @@
+form {
+    background-image: url(../images/formBg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px 0;
+    z-index: 40;
+  }
+
+.btn-check:checked + .btn-success, .btn-check:active + .btn-success, .btn-success:active, .btn-success.active, .show > .btn-success.dropdown-toggle {
+    color: $success !important;
+    background-color: white;
+    border-color: #89b19d;
+    box-shadow: none;
+  }
+
+  .custom-checkbox{
+    accent-color: $secondary;
+  }
